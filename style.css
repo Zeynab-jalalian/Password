@@ -85,3 +85,12 @@ body{
     cursor: pointer;
     user-select: none;
 }
+.wrapper .generate_password{
+    width: 100%;
+    color: white;
+    background: blueviolet;
+    border: none;
+    padding: 16px 0;
+    border-radius: 5px;
+    outline: none;
+}
