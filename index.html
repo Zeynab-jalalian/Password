@@ -22,13 +22,45 @@
 
           <div class="pass_indicator"></div>
 
-          <div class="pass-length">
+          <div class="pass_length">
            <div class="details">
             <label>طول رمز عبور</label>
             <span></span>
            </div>
            <input type="range" min="1" max="30" step="1">
           </div>
+
+
+         <div class="pass_setting">
+            <label class="title">تنظیمات رمز عبور</label>
+            <ul class="options">
+                <li class="option">
+                    <input type="checkbox" checked id="lowercase">
+                    <label for="lowercase">(a-z)حروف کوچک</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" checked id="uppercase">
+                    <label for="uppercase">(A-Z)حروف بزرگ</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" checked id="numbers">
+                    <label for="numbers">(9-0) عدد</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" checked id="symbols">
+                    <label for="symbols">(+*&^%$#@!) کاراکتر</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" checked id="duplicate">
+                    <label for="duplicate">تکرار غیرمجاز</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" checked id="spaces">
+                    <label for="spaces">فضای خالی</label>
+                </li>
+            </ul>
+
+         </div>
 
 
 
