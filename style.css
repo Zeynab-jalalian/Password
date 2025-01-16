@@ -64,3 +64,24 @@ body{
     width: 100%;
     height: 5px;
 }
+.wrapper .pass_setting .options{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+.options .option{
+    display: flex;
+    align-items: center;
+    width: calc(100%/2);
+    margin-bottom: 20px;
+}
+.option input{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.option label{
+    cursor: pointer;
+    user-select: none;
+}
