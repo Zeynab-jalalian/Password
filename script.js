@@ -36,11 +36,12 @@ let generatePassword=function(){
         let randomCar=staticPassword[Math.floor(Math.random()*staticPassword.length)]
         
         if(DuplicateItem){
-
+          !randomPassword.includes(randomCar) || randomCar===" " ? randomPassword+=randomCar:i--;
         }else{
-
+            randomPassword+=randomCar;
         }
     }
+    passwordInput.value=randomPassword;
 }
 const updateSlider=function(){
     counterSlider.innerHTML=lengthSlider.value;
