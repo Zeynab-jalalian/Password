@@ -43,8 +43,13 @@ let generatePassword=function(){
     }
     passwordInput.value=randomPassword;
 }
+const updatePasswordIndicator=function(){
+    passIndicator.id=lengthSlider.value<=8 ? "weak" : lengthSlider.value<=16 ? "med" : "strong";
+}
 const updateSlider=function(){
     counterSlider.innerHTML=lengthSlider.value;
+    updatePasswordIndicator();
+    generatePassword();
 }
 updateSlider();
 generateBtn.addEventListener('click',generatePassword);
