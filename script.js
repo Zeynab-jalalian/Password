@@ -16,6 +16,17 @@ const characters={
 let generatePassword=function(){
     let passLength=lengthSlider.value;
     let staticPassword="";
+    options.forEach(option=>{
+        if(option.checked){
+            if(option.id !== "duplicate" && option.id !== "spaces"){
+                staticPassword+=characters[option.id];
+            }else if( option.id === "spaces"){
+             staticPassword=staticPassword+` ${staticPassword} `
+ 
+             
+            }
+        }
+    })
 }
 const updateSlider=function(){
     counterSlider.innerHTML=lengthSlider.value;
