@@ -16,6 +16,7 @@ const characters={
 let generatePassword=function(){
     let passLength=lengthSlider.value;
     let staticPassword="";
+    let DuplicateItem=false;
     options.forEach(option=>{
         if(option.checked){
             if(option.id !== "duplicate" && option.id !== "spaces"){
@@ -24,9 +25,20 @@ let generatePassword=function(){
              staticPassword=staticPassword+` ${staticPassword} `
  
              
+            }else{
+                DuplicateItem=true;
             }
         }
     })
+
+    for(let i=0;i<passLength;i++){
+        let randomCar=staticPassword[Math.floor(Math.random()*staticPassword.length)]
+        if(DuplicateItem){
+
+        }else{
+            
+        }
+    }
 }
 const updateSlider=function(){
     counterSlider.innerHTML=lengthSlider.value;
