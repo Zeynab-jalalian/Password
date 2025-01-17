@@ -52,5 +52,15 @@ const updateSlider=function(){
     generatePassword();
 }
 updateSlider();
+const copyPassword=function(){
+    navigator.clipboard.writeText(passwordInput.value);
+    copyIcon.innerHTML="کپی شد!";
+    copyIcon.style.color="green";
+    setTimeout(function(){
+        copyIcon.innerHTML="کپی";
+        copyIcon.style.color="#000";
+    },2000)
+}
 generateBtn.addEventListener('click',generatePassword);
+copyIcon.addEventListener('click',copyPassword);
 lengthSlider.addEventListener('input',updateSlider);
