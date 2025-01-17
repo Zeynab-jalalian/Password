@@ -17,6 +17,7 @@ let generatePassword=function(){
     let passLength=lengthSlider.value;
     let staticPassword="";
     let DuplicateItem=false;
+    let randomPassword="";
     options.forEach(option=>{
         if(option.checked){
             if(option.id !== "duplicate" && option.id !== "spaces"){
@@ -33,10 +34,11 @@ let generatePassword=function(){
 
     for(let i=0;i<passLength;i++){
         let randomCar=staticPassword[Math.floor(Math.random()*staticPassword.length)]
+        
         if(DuplicateItem){
 
         }else{
-            
+
         }
     }
 }
